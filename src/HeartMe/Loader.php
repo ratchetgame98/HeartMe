@@ -24,10 +24,11 @@ class Loader extends PluginBase{
             case "date":
                 if($sender->hasPermission("heartme.command.date")){
                     if($sender instanceof Player){
-                        $player = $sender->getName;
                         $target = $this->getServer->getPlayer($args[0]);
+                        $player = $sender->getName();
+                        $name = $target->getName();
                         $target->sendMessage("$player wants to date you!")
-                        $this->getServer()->broadcastMessage("There's a new couple in town: $player and $target!")
+                        $this->getServer()->broadcastMessage("There's a new couple in town: $player and $name!")
                     }
                     else{
                         $sender->sendMessage(TextFormat::RED."Please run this command in-game.");
@@ -41,10 +42,11 @@ class Loader extends PluginBase{
             case "dump":
                 if($sender->hasPermission("heartme.command.dump")){
                     if($sender instanceof Player){
-                        $player = $sender->getName;
                         $target = $this->getServer->getPlayer($args[0]);
+                        $player = $sender->getName();
+                        $name = $target->getName();
                         $target->sendMessage("$player has dumped you!")
-                        $this->getServer()->broadcastMessage("$player dumped $target!")
+                        $this->getServer()->broadcastMessage("$player dumped $name! This is really bad!")
                     }
                     else{
                         $sender->sendMessage(TextFormat::RED."Please run this command in-game.");
