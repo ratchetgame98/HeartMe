@@ -32,6 +32,7 @@ class Loader extends PluginBase{
                     }
                     else{
                         $sender->sendMessage(TextFormat::RED."Please run this command in-game.");
+                        return true;
                     }
                 }
                 else{
@@ -50,6 +51,7 @@ class Loader extends PluginBase{
                     }
                     else{
                         $sender->sendMessage(TextFormat::RED."Please run this command in-game.");
+                        return true;
                     }
                 }
                 else{
