@@ -27,8 +27,8 @@ class Loader extends PluginBase{
                         $target = $this->getServer->getPlayer($args[0]);
                         $player = $sender->getName();
                         $name = $target->getName();
-                        $target->sendMessage("$player wants to date you!")
-                        $this->getServer()->broadcastMessage("There's a new couple in town: $player and $name!")
+                        $target->sendMessage("$player wants to date you!");
+                        $this->getServer()->broadcastMessage("There's a new couple in town: $player and $name!");
                     }
                     else{
                         $sender->sendMessage(TextFormat::RED."Please run this command in-game.");
@@ -45,8 +45,8 @@ class Loader extends PluginBase{
                         $target = $this->getServer->getPlayer($args[0]);
                         $player = $sender->getName();
                         $name = $target->getName();
-                        $target->sendMessage("$player has dumped you!")
-                        $this->getServer()->broadcastMessage("$player dumped $name! This is really bad!")
+                        $target->sendMessage("$player has dumped you!");
+                        $this->getServer()->broadcastMessage("$player dumped $name! This is really bad!");
                     }
                     else{
                         $sender->sendMessage(TextFormat::RED."Please run this command in-game.");
