@@ -11,3 +11,7 @@ commands:
   description: Dates the specified player
   usage: /date <player>
   permission: heartme.command.date
+ dump:
+  description: Dump the specified player
+  usage: /dump <player>
+  permission: heartme.command.dump
