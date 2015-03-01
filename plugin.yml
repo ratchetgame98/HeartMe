@@ -2,7 +2,7 @@ name: HeartMe
 main: HeartMe\Loader
 version: 1.0.0
 api: [1.0.0]
-load: STARTUP
+load: POSTWORLD
 author: Gamecrafter
 description: Players can date each other for roleplay!
 website: https://github.com/Gamecrafter/HeartMe
